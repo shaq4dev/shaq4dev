@@ -92,7 +92,7 @@ function Menu ({ init }) {
 
 const menu = [
     {title: 'about', link:'/about'},
-    {title: 'experience', link:'/experience'},
-    {title: 'projects', link:'/projects'},
-    {title: 'contact', link:'/contact'}
+    {title: 'experience', link:'#experience'},
+    {title: 'projects', link:'#projects'},
+    {title: 'contact', link:'#contact'}
 ]

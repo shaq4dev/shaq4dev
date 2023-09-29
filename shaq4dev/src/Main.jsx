@@ -1,7 +1,9 @@
 import Button from "./components/Button"
+import ContactForm from "./components/ContactForm"
 import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import Navigation from "./components/Nav"
+import Project from "./components/Project"
 import SectionTitle from "./components/SectionTitle"
 
 const Main = () => {
@@ -9,7 +11,7 @@ const Main = () => {
         <div className="relative">
             <Navigation/>
             <Hero/>
-            <SectionTitle text='Experience'/>
+            <SectionTitle text='Experience' call='experience'/>
             <SectionTitle text='2019'/>
             <Experience 
                 position='Managing Director'
@@ -30,7 +32,7 @@ const Main = () => {
                 company='TIM Corporation'
                 role='Senior WordPress Developer'
                 career='Engineer'
-                paragraph='In 2023, I was contracted by TIM Corporation to help in the development of their website. Although the scope of the projects was mainly WordPress based, I had to include different technologies and the use of CSS and Javascript for certain functionalities that were needed to be implemented. '
+                paragraph={`In 2023, I was contracted by TIM Corporation to help in the development of their website. Although the scope of the projects was mainly WordPress based, I had to include different technologies and the use of CSS and Javascript for certain functionalities that were needed to be implemented. `}
                 btn1='Wordpress' 
                 btn2='Elementor'
                 btn3='GoDaddy'
@@ -41,6 +43,15 @@ const Main = () => {
             <div className="section-btn mx-8 py-10">
                 <Button text='View Full Resumé'/>
             </div>
+            <SectionTitle text='Projects' call='projects'/>
+
+            <Project/>
+            <div className="section-btn mx-8 py-10">
+                <Button text='View Full Project Archive'/>
+            </div>
+
+            <SectionTitle text='Contact' call='contact'/>
+            <ContactForm/>
         </div>
     )
 }
