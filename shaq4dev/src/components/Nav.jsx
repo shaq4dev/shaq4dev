@@ -65,7 +65,7 @@ function Menu ({ init }) {
     let keygen = 0
 
     const items = menu.map(item => (
-        <li key={keygen++} className='font-bold text-xl py-2 text-center hover:bg-button-blue hover:text-white transition-all cursor-pointer'>
+        <li key={keygen++} className='font-bold font-workSansReg text-xl py-2 text-center hover:bg-button-blue hover:text-white transition-all cursor-pointer'>
             <a href={item.link}>{item.title}</a>
         </li>
     ))    
@@ -73,13 +73,13 @@ function Menu ({ init }) {
     return (
         init ? (
             
-            <div className="menuContainer absolute top-[80px] w-[100vw] bg-button-blue-bg py-10 -translate-y-96 transition-all duration-500 ">
+            <div className="menuContainer fixed top-[78px] w-[100vw] bg-slate-100 z-10 py-10 -translate-y-96 transition-all duration-500 ">
             <ul>
                 {items}
             </ul>
         </div>
             ) : (
-                <div className="menuContainer absolute top-[80px] w-[100vw] bg-button-blue-bg py-10 translate-y-[18px] transition-all duration-500">
+                <div className="menuContainer fixed top-[78px] w-[100vw] bg-slate-100 z-10 py-10 translate-y-[18px] transition-all duration-500">
             <ul>
                 {items}
             </ul>

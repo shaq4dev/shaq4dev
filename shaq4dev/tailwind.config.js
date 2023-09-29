@@ -11,6 +11,10 @@ module.exports = {
         'button-blue': '#0064C0', 
         'button-blue-bg': 'rgba(0, 100, 192, 5%)'
       },
+      fontFamily: {
+        workSansReg: 'work Sans, san-serif', 
+        RobotoSerif: 'roboto serif, serif'
+      }
     },
   },
   plugins: [],
