@@ -4,7 +4,7 @@ import Socials from './Socials'
 
 const HeroImage = () => {
   return (
-    <div>
+    <div className='w-1/2 lg:flex lg:items-center bg-blue-300'>
       <img
             src={ImgHero}
             alt='shaquille-hero'

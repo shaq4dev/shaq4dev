@@ -10,14 +10,14 @@ const Socials = () => {
   const socials = meta.map(social => (
     <li key={social.key}>
         <a href={social.link}>
-            <img src={social.src} alt={social.name} className='w-8' />
+            <img src={social.src} alt={social.name} className='w-8 lg:py-4' />
         </a>
     </li>
   ))
 
   return (
     <div className='socials'>
-      <ul className='flex items-center justify-between mx-12 pt-5 pb-10'>{socials}</ul>
+      <ul className='flex items-center justify-between mx-12 pt-5 pb-10 lg:flex-col'>{socials}</ul>
     </div>
   )
 }
