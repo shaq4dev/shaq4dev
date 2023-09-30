@@ -1,6 +1,7 @@
 import Button from "./components/Button"
 import ContactForm from "./components/ContactForm"
 import Experience from "./components/Experience"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navigation from "./components/Nav"
 import Project from "./components/Project"
@@ -52,6 +53,8 @@ const Main = () => {
 
             <SectionTitle text='Contact' call='contact'/>
             <ContactForm/>
+
+            <Footer/>
         </div>
     )
 }
