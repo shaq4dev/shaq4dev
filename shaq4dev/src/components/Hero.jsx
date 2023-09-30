@@ -6,13 +6,8 @@ const Hero = () => {
   return (
     <div>
       <div className="heroContainer pt-[90px]">
-
-        {/* text */}
         <HeroText/>
-
-        {/* image */}
         <HeroImage/>
-        
       </div>
     </div>
   )
